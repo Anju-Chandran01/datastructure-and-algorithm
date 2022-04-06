@@ -2,7 +2,8 @@ package com.bridgelabz.algorithm.bst;
 
 public class BinaryTree {
 
-    static class Node {
+    //class for the creating node in the linked list
+    class Node{
         int data;
         Node left;
         Node right;
@@ -20,7 +21,6 @@ public class BinaryTree {
             root.right = insert(root.right, val);
         }
         return root;
-
     }
 
     //method to create new node in BST
@@ -40,6 +40,5 @@ public class BinaryTree {
         print(root.left);
         System.out.println(root.data);
         print(root.right);
-
     }
 }
