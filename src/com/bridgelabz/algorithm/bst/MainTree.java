@@ -1,10 +1,12 @@
 package com.bridgelabz.algorithm.bst;
 
+import java.util.Scanner;
+
 public class MainTree {
     public static void main(String[] args) {
         //creating instances
         BinaryTree bst = new BinaryTree();
-        BinaryTree.Node root = null;
+        Node root = null;
         /*Inserting node in the Binary tree*/
 
         root = bst.insert(root, 56);
@@ -21,5 +23,11 @@ public class MainTree {
         root = bst.insert(root, 63);
         root = bst.insert(root, 67);
         bst.print(root);
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the node you want to search");
+        int search =sc.nextInt();
+        System.out.println(bst.nodePresent(root, search));
+
     }
 }
